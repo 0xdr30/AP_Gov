@@ -15,7 +15,9 @@ class flashcards:
         with open('chapter4.txt') as chapter4:
             data = chapter4.read()
         self.terms4 = json.loads(data)
-        self.terms5={}
+        with open('chapter5.txt') as chapter5:
+            data = chapter5.read()
+        self.terms5 = json.loads(data)
 
     def quiz(self):
         choice = int(input("Which Chapter Would You Like to Study? (1/2/3/4/5) \n"))
